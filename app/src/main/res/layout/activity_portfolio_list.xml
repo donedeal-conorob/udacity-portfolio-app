@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".PortfolioListActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/textView_portfolio_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:text="@string/portfolio_title"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical">
+
+                <Button android:id="@+id/button_1"
+                    style="@style/portfolio_button"
+                    android:text="@string/portfolio_button1_text"
+                    android:onClick="makeToast"/>
+
+                <Button android:id="@+id/button_2"
+                    style="@style/portfolio_button"
+                    android:text="@string/portfolio_button2_text"/>
+
+                <Button android:id="@+id/button_3"
+                    style="@style/portfolio_button"
+                    android:text="@string/portfolio_button3_text"/>
+
+                <Button android:id="@+id/button_4"
+                    style="@style/portfolio_button"
+                    android:text="@string/portfolio_button4_text"/>
+
+                <Button android:id="@+id/button_5"
+                    style="@style/portfolio_button"
+                    android:text="@string/portfolio_button5_text"/>
+
+                <Button android:id="@+id/button_6"
+                    style="@style/portfolio_button"
+                    android:background="#FFE91E63"
+                    android:textColor="#FFFCE4EC"
+                    android:text="@string/portfolio_button6_text"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
